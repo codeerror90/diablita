@@ -9,7 +9,7 @@
         <a href="#"><img title="whatsapp-bot-termux" src="https://img.shields.io/badge/-WHATSAPP--BOT--TERMUX-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
     </p>
     <p>
-        <a href="https://github.com/g4tito"><img title="Author"    src="https://img.shields.io/badge/Author-gatito-purple.svg?style=for-the-badge&logo=github"></a>
+        <a href="https://github.com/g4tito"><img title="Author"    src="https://img.shields.io/badge/Author-hermes-purple.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
         <a href="https://github.com/g4tito/followers"><img title="Followers" src="https://img.shields.io/github/followers/g4tito?color=blue&style=flat-square"></a>
