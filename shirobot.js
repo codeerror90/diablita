@@ -2457,26 +2457,6 @@ var enlace = 'Undefined'
 //====================================================================================================//
 
 //>> Anti groseria
-	if (budy.includes("puto") || (budy.includes("mierda") || (budy.includes("Puto") || (budy.includes("puta") || (budy.includes("Puta") || (budy.includes("Estupido") || (budy.includes("Calla gay") || (budy.includes("estupido") || (budy.includes("Mierda") || (budy.includes("mrd ") || (budy.includes("Mrd ") || (budy.includes("jodiendo") || (budy.includes("Jodiendo") || (budy.includes("pvto"))))))))))))))){
-		const currentWarn = getWarn(sender)
-				const checkIdWarn = getWarnId(sender)
-					if (currentWarn === undefined && checkIdWarn === undefined) addWarnId(sender)
-					addWarn(sender, 1)
-		console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"))
-		console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Groseria detectado", "red"))
-		console.log('\x1b[1;31m', color("➛ ", "red"), color("De: "), color(`${sender.split("@")[0]}`, "orange"))
-		Fg.sendMessage(from, `✳️ En este grupo no está permitido los insultos, *${advertencia}* advertencia\n\n*📌Nota:* 4 advertencias = ban`, text, {quoted: mek, contextInfo: {"mentionedJid": [sender]}})
-		if (!isBotGroupAdmins) return reply('🤨 Por suerte no soy  admin, asi que no te expulsare')
-		Fg.updatePresence(from, Presence.composing)
-		if (currentWarn === 3) {
-			var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-			Fg.sendMessage(from, `✅ @${kic.split("@")[0]} has superado las 4 advertencias adiós`, text, {quoted: mek, contextInfo: {"mentionedJid": [kic]}})
-			setTimeout( () => {
-			Fg.groupRemove(from, [kic]).catch((e)=>{reply('❎ Error, no se pudo eliminar al usuario')})
-			addWarn(sender, -4)
-			}, 1000)
-			}
-		}
 
 //>> Anti cadenas
 if (budy.includes("ncuentra el error") || (budy.includes("alo a 5 grupos y") || (budy.includes("█████") || (budy.includes("tu deseo se cumplira") || (budy.includes("telo en 5 grupos") || (budy.includes("solo envía esta cadena") || (budy.includes("uevo patron de desbloqueo") || (budy.includes("pide tres deseos") || (budy.includes("pide 3 deseos") || (budy.includes("Instala para obtener el tema"))))))))))){
@@ -2928,12 +2908,12 @@ case 'status':
 case 'estado':
 if(!isVerify) return isUser()
   if (isBanned) return reply(banf())
-const fgnum = "51940617554@s.whatsapp.net"
-const botnum = "51988050859"
-const ayudante = "5216221512187@s.whatsapp.net"
-const fg = "59172945992@s.whatsapp.net"
+const fgnum = "5218333659697@s.whatsapp.net"
+const botnum = "5218331022769"
+const ayudante = "5218332918453@s.whatsapp.net"
+const fg = "5218333659697@s.whatsapp.net"
 const unread = await Fg.loadAllUnreadMessages ();
-const timestampp = speed();59172945992
+const timestampp = speed();5218333659697
 const latensii = speed() - timestampp
                    let totalchat = await Fg.chats.all()
                    let i = []
@@ -2986,7 +2966,7 @@ _Recodificador del bot (dueño)_
 • *FG :* @${fg.split("@s.whatsapp.net")[0]}
 _Base oficial del bot_
 
-• *Edgar :* @${ayudante.split("@s.whatsapp.net")[0]}
+• *Juan Carlos :* @${ayudante.split("@s.whatsapp.net")[0]}
 _Ayuda en algunos comandos_`
 Fg.sendMessage(from, inifernazer, text, { quoted: mek, contextInfo: { externalAdReply:{title: `式⃟🐱INFORMACIÓNES🐱⃟式`,body: `• Fecha : ${fecha2}\n• Hora : ${hora2}`, previewType:"PHOTO",thumbnail: shirologo, sourceUrl:``}, "mentionedJid": [fgnum, fg, ayudante]}})
              
