@@ -259,7 +259,7 @@ const vcard2 = 'BEGIN:VCARD\n'
  + 'VERSION:3.0\n' 
  + 'FN:式⃟🩸고양이🩸⃟式⁩\n'
  + 'ORG:Dueño de DiablitaBot;\n' 
- + 'TEL;type=CELL;type=VOICE;waid=51940617554:+51 940 617 554\n'
+ + 'TEL;type=CELL;type=VOICE;waid=5218333659697:+52 8333 659 697\n'
  + 'END:VCARD'
 //====================================================================================================//
 //>> Funcion de advertencias
