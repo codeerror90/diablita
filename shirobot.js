@@ -8798,7 +8798,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   gracioso = fs.readFileSync('./almacenamiento/audios/gracioso.mp3')
                   Fg.sendMessage(from, gracioso, audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true, duration: 4})
                   }
-                  if (budy.includes('vto bot')) {
+                  if (budy.includes('uto bot')) {
                   if (!isInteraction) return 
                   pvto = fs.readFileSync('./almacenamiento/audios/insultarme.mp3')
                   Fg.sendMessage(from, pvto, audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true, duration: 3})
@@ -8851,7 +8851,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   if (!isInteraction) return 
                   reply(`Bueno en ese caso el tuyo 7w7`)
                   }
-                  if (budy.includes('@51988050859')) {
+                  if (budy.includes('@5218331022769')) {
                   if (!isInteraction) return 
                   reply(`Holi, en que le puedo ayudar? para ver mis comandos pon *+menu*`)
                   }
@@ -8860,7 +8860,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   reply(`7w7`)
                   }
                  
-                 if (budy.startsWith("Ya sabes que hacer xd") || (budy.startsWith("Mátalo >:)") || (budy.startsWith("#/#/#/#") || (budy.startsWith("#/#/#/#"))))){
+                 if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Mátalo >:)") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv"))))){
                  if (!isOwner) return 
                  connn = ["Weno :v", "Ok", "xd", "Hay boy n.n"]
                  tyxz = connn[Math.floor(Math.random() * connn.length)]
