@@ -194,7 +194,7 @@ gCoinF
 //====================================================================================================//
 
 //>> Configuración
-const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPTQ"
+const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPQ"
 const owner = "5218333659697"
 const owner2 = "5218334160298"
 const mods = ["51940617554","5218911054291","5356588048"]
@@ -214,7 +214,7 @@ const Pkode = 'pais'
 
 
 //====================[ ENLACES ]====================//
-const soportefg = 'https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPTQ'
+const soportefg = 'https://chat.whatsapp.com/FzcwScmCwM4wRcEfrPTQ'
 //====================[ FIN DE ENLACES ]====================//
 
 //====================[ ALMACENAMIENTO ]====================//
@@ -4161,7 +4161,7 @@ case 'screen':
                if(!isVerify) return isUser()
   if (isBanned) return reply(banf())
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(fdiama(prefix))
-                   if (args.length < 1) return reply(`✳️ Ejemplo :\n*${prefix + command} https://github.com/g4tito*`)                  
+                   if (args.length < 1) return reply(`✳️ Ejemplo :\n*${prefix + command} https://github.com/*`)                  
                    reply(wait())
                    anu = await getBuffer(`http://anu-team.herokuapp.com/api/ssweb?url=${q}`)
                    Fg.sendMessage(from, anu, image, {caption: `✅ Screenshot de la página`, quoted: mek})
