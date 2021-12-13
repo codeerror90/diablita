@@ -1,4 +1,4 @@
-# ☯️「shirobot」☪️
+# ☯️「diablitabot」☪️
 ---------
 
 <h1 align="center">
