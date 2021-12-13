@@ -195,14 +195,14 @@ gCoinF
 
 //>> Configuración
 const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPTQ"
-const owner = "51940617554"
-const owner2 = "51975954286"
+const owner = "5218333659697"
+const owner2 = "5218334160298"
 const mods = ["51940617554","5218911054291","5356588048"]
-const botname = "shirobot"
-const botname2 = "SHIROBOT"
-const botname3 = "ShiroBot"
-const ownername = "「gatitoツ」"
-const ownername2 = "gatito"
+const botname = "Diablitabot"
+const botname2 = "DIABLITABOT"
+const botname3 = "DiablitaBot"
+const ownername = "「Hermesツ」"
+const ownername2 = "hermes"
 
 const Vkey = confi.Zekskey
 const lolkey = confi.LolHumanKey
@@ -258,7 +258,7 @@ const vcard1 = 'BEGIN:VCARD\n'
 const vcard2 = 'BEGIN:VCARD\n' 
  + 'VERSION:3.0\n' 
  + 'FN:式⃟🩸고양이🩸⃟式⁩\n'
- + 'ORG:Dueño de ShiroBot;\n' 
+ + 'ORG:Dueño de DiablitaBot;\n' 
  + 'TEL;type=CELL;type=VOICE;waid=51940617554:+51 940 617 554\n'
  + 'END:VCARD'
 //====================================================================================================//
@@ -1005,7 +1005,7 @@ return Math.floor(angka)
 
 //>> sticker nombre
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'Shirobot'; if (!author) author = 'gatito';	
+	if (!packname) packname = 'DiablitaBot'; if (!author) author = 'Hermes';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -1950,7 +1950,7 @@ Fg.sendMessage(from, levelup, text, {quoted: mek, contextInfo: {"mentionedJid": 
 
 //>> Emoji a sticker
     const sendStickerFromUrl = async(to, url) => {
-			console.log(color('[SHIROBOT]','magenta'), color('✅ Descargando sticker...'));
+			console.log(color('[DiablitaBot]','magenta'), color('✅ Descargando sticker...'));
 				var names = getRandom('.webp')
 				var namea = getRandom('.png')
 				var download = function (uri, filename, callback) {
@@ -1966,7 +1966,7 @@ Fg.sendMessage(from, levelup, text, {quoted: mek, contextInfo: {"mentionedJid": 
 					exec(`webpmux -set exif ./sticker/data.exif ${asw} -o ${asw}`, async (error) => {
 					let media = fs.readFileSync(asw)
 					Fg.sendMessage(to, media, sticker,{quoted:mek})
-					console.log(color('[SHIROBOT]','magenta'), color('💎 Enviando sticker...'));
+					console.log(color('[DiablitaBot]','magenta'), color('💎 Enviando sticker...'));
 					fs.unlinkSync(asw)
 					fs.unlinkSync(filess)
 					});
@@ -2902,7 +2902,7 @@ break
   ℹ️ ${prefix}join
   ℹ️ ${prefix}ayuda`
 
-//{quoted: mek, thumbnail: imgth, contextInfo: {externalAdReply: {title: `>⃗✗᳙᳓Shiro ᭲ Bot͢ 式⁩`,body: "I love you Macielly", previewType: "PHOTO", thumbnail: waifu0, sourceUrl:``}}}
+//{quoted: mek, thumbnail: imgth, contextInfo: {externalAdReply: {title: `>⃗✗᳙᳓Diablita ᭲ Bot͢ 式⁩`,body: "I love you Macielly", previewType: "PHOTO", thumbnail: waifu0, sourceUrl:``}}}
 py = await Fg.prepareMessage(from, shiro0, image)
 gbutsan = [
 {buttonId: `${prefix}creador`, buttonText: {displayText: '🐱 CREADOR'}, type: 1},
@@ -2980,7 +2980,7 @@ const latensii = speed() - timestampp
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 *🐱〝 Agradecimientos 〞🐱*
 
-• *Gatito :* @${fgnum.split("@s.whatsapp.net")[0]}
+• *Hermes :* @${fgnum.split("@s.whatsapp.net")[0]}
 _Recodificador del bot (dueño)_
 
 • *FG :* @${fg.split("@s.whatsapp.net")[0]}
@@ -3151,7 +3151,7 @@ case 'script':
   if (isBanned) return reply(banf())
   scfg = `────────────────
 📌 Repositorio de este Bot : 
- https://github.com/g4tito/shirobot
+ https://github.com/
 ────────────────`
 reply(scfg)
 break
@@ -6872,7 +6872,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker imagen creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('Shirobot', 'gatito')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									 if (error) {
 											 reply('❎ Error al crear el sticker')
 											 fs.unlinkSync(media)	
@@ -6908,7 +6908,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker video creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('Shirobot', 'gatito')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									if (error) {
 											 reply('❎ Error al crear el stickergif')
 											 fs.unlinkSync(media)	
@@ -7188,7 +7188,7 @@ break
         if(!isOwner) return ('Fitur ini khusus owner')
         if (!q) return reply(mess.wrongFormat);
         exec(q, (err, stdout) => {
-          if (err) return reply(`[SHIROBOT]:~ ${err}`);
+          if (err) return reply(`[DiablitaBot]:~ ${err}`);
           if (stdout) {
             reply(stdout);
           }
@@ -8086,7 +8086,7 @@ if (isBanned) return reply(banf())
                         var tes = "🥳 victoria del jugador"
                     }
                     if (vit == "derrota") {
-                        var tes = "🐱 victoria de shiro"
+                        var tes = "🐱 victoria de Diablita"
                     }
                     if (vit == "empate") {
                         var tes = "El juego termino en empate"
@@ -8342,7 +8342,7 @@ case 'mc':
 if(!isVerify) return isUser()
   if (isBanned) return reply(banf())
                    inifer = `*DESCARGA DANDO CLICK AQUI ARRIBA XD*`
-             Fg.sendMessage(from, inifer, text, { quoted: mek, contextInfo: { externalAdReply:{title: `「 MINECRAFT PE 」`,body:"Vercion 1.17.40.06 oficial\nBy 「gatitoツ」", previewType:"PHOTO",thumbnail: minecraft, sourceUrl:`https://www.mediafire.com/file/812dusmbfgqp461/%255B%25C9%25A2%25E1%25B4%2580%25E1%25B4%259B%25C9%25AA%25E1%25B4%259B%25E1%25B4%258F%255D_Minecraft_PE_1.17.40.06_Oficial.apk/file`}, "mentionedJid": [sender]}})
+             Fg.sendMessage(from, inifer, text, { quoted: mek, contextInfo: { externalAdReply:{title: `「 MINECRAFT PE 」`,body:"Vercion 1.17.40.06 oficial\nBy 「Hermesツ」", previewType:"PHOTO",thumbnail: minecraft, sourceUrl:`https://www.mediafire.com/file/812dusmbfgqp461/%255B%25C9%25A2%25E1%25B4%2580%25E1%25B4%259B%25C9%25AA%25E1%25B4%259B%25E1%25B4%258F%255D_Minecraft_PE_1.17.40.06_Oficial.apk/file`}, "mentionedJid": [sender]}})
            break
 
 case 'memes':
@@ -8855,7 +8855,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   }
                   
                   //>> Mensajes
-                  if (budy.includes("Gracias bot") || (budy.includes("gracias bot") || (budy.includes("Gracias shiro") || (budy.includes("gracias shiro"))))){
+                  if (budy.includes("Gracias bot") || (budy.includes("gracias bot") || (budy.includes("Gracias Diablita") || (budy.includes("gracias diablita"))))){
                   if (!isInteraction) return 
                   reply(`De nada, estoy para ayudarte :3`)
                   }
@@ -8875,7 +8875,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   if (!isInteraction) return 
                   reply(`Holi, en que le puedo ayudar? para ver mis comandos pon *+menu*`)
                   }
-                  if (budy.includes('shiro')) {
+                  if (budy.includes('Diablita')) {
                   if (!isInteraction) return 
                   reply(`7w7`)
                   }
