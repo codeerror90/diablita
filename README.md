@@ -12,7 +12,7 @@
         <a href="https://github.com/codeerror90"><img title="Author"    src="https://img.shields.io/badge/Author-hermes-purple.svg?style=for-the-badge&logo=github"></a>
     </p>
     <p>
-        <a href="https://github.com/codeerror90/followers"><img title="Followers" src="https://img.shields.io/github/followers/g4tito?color=blue&style=flat-square"></a>
+          <a href="https://github.com/codeerror90/followers"><img title="Followers" src="https://img.shields.io/github/followers/codeerror90?color=blue&style=flat-square"></a>
         <a href="https://github.com/codeerror90/diablita/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/g4tito/shirobot?color=red&style=flat-square"></a>
         <a href="https://github.com/codeerror90/diablita/network/members"><img title="Forks" src="http://img.shields.io/github/forks/g4tito/shirobot?color=red&style=flat-square"></a>
         <a href="https://github.com/codeerror90/diablita/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/g4tito/shirobot?label=Watchers&color=blue&style=flat-square"></a>
