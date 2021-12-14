@@ -2967,7 +2967,7 @@ _Recodificador del bot (dueño)_
 _Base oficial del bot_
 
 • *Juan Carlos :* @${ayudante.split("@s.whatsapp.net")[0]}
-_Ayuda en algunos comandos_`
+_Ayuda en puebas y sugerencias_`
 Fg.sendMessage(from, inifernazer, text, { quoted: mek, contextInfo: { externalAdReply:{title: `式⃟🐱INFORMACIÓNES🐱⃟式`,body: `• Fecha : ${fecha2}\n• Hora : ${hora2}`, previewType:"PHOTO",thumbnail: shirologo, sourceUrl:``}, "mentionedJid": [fgnum, fg, ayudante]}})
              
            break
