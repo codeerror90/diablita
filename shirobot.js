@@ -8861,7 +8861,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   }
                  
                  if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Mátalo >:)") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv"))))){
-                 if (!isOwner) return 
+                 if (!isGroupAdmins) return 
                  connn = ["Weno :v", "Ok", "xd", "Hay boy n.n"]
                  tyxz = connn[Math.floor(Math.random() * connn.length)]
                  reply(tyxz)
