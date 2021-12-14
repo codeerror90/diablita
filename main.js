@@ -73,11 +73,11 @@ Fg.on('group-participants-update', async (anu) => {
 			console.log(anu)
 			if (anu.action == 'add') {
 				num = anu.participants[0] 
-				if (num.startsWith('9')) return Fg.groupRemove(mdata.id, [num])
-				if (num.startsWith('1')) return Fg.groupRemove(mdata.id, [num])
-				if (num.startsWith('2')) return Fg.groupRemove(mdata.id, [num])
-				if (num.startsWith('3')) return Fg.groupRemove(mdata.id, [num])
-				if (num.startsWith('4')) return Fg.groupRemove(mdata.id, [num])
+				if (num.startsWith('84')) return Fg.groupRemove(mdata.id, [num])
+				if (num.startsWith('83')) return Fg.groupRemove(mdata.id, [num])
+				if (num.startsWith('82')) return Fg.groupRemove(mdata.id, [num])
+				if (num.startsWith('81')) return Fg.groupRemove(mdata.id, [num])
+				if (num.startsWith('80')) return Fg.groupRemove(mdata.id, [num])
 				try {
 					ppimg = await Fg.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
