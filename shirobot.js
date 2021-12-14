@@ -2910,7 +2910,7 @@ if(!isVerify) return isUser()
   if (isBanned) return reply(banf())
 const fgnum = "5218333659697@s.whatsapp.net"
 const botnum = "5218331022769"
-const ayudante = "5218332918453@s.whatsapp.net"
+const ayudante = "5218333333333@s.whatsapp.net"
 const fg = "5218333659697@s.whatsapp.net"
 const unread = await Fg.loadAllUnreadMessages ();
 const timestampp = speed();5218333659697
@@ -2966,7 +2966,7 @@ _Recodificador del bot (dueño)_
 • *FG :* @${fg.split("@s.whatsapp.net")[0]}
 _Base oficial del bot_
 
-• *Juan Carlos :* @${ayudante.split("@s.whatsapp.net")[0]}
+• *Alejandro :* @${ayudante.split("@s.whatsapp.net")[0]}
 _Ayuda en puebas y sugerencias_`
 Fg.sendMessage(from, inifernazer, text, { quoted: mek, contextInfo: { externalAdReply:{title: `式⃟🐱INFORMACIÓNES🐱⃟式`,body: `• Fecha : ${fecha2}\n• Hora : ${hora2}`, previewType:"PHOTO",thumbnail: shirologo, sourceUrl:``}, "mentionedJid": [fgnum, fg, ayudante]}})
              
