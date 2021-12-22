@@ -6909,7 +6909,91 @@ if(!isVerify) return isUser()
 				    limitAdd(sender, limit)
 					break
 
-		    
+case 'gif':  
+if(!isVerify) return isUser()
+  if (isBanned) return reply(banf())
+  if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(fdiama(prefix))
+  try {
+  	ppimg = await Fg.getProfilePicture(`${sender.split('@')[0]}@c.us`)
+  } catch {
+  	ppimg = 'https://i.ibb.co/7gPkC4q/shiro-1.jpg'
+  }
+  reusesr = await getBuffer(ppimg)
+					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const media = await Fg.downloadAndSaveMediaMessage(encmedia)
+						ran = getRandom('.webp')
+						await ffmpeg(`./${media}`)
+							.input(media)
+							.on('start', function (cmd) {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Creando sticker imagen", "yellow"))
+							})
+							.on('error', function (err) {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Error al crear el sticker imagen", "red"))
+								fs.unlinkSync(media)
+								reply('❎ Error al crear el sticker')
+							})
+							.on('end', function () {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker imagen creado con éxito", "yellow"))
+								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+									 if (error) {
+											 reply('❎ Error al crear el sticker')
+											 fs.unlinkSync(media)	
+											 fs.unlinkSync(ran)
+											 }
+									Fg.sendMessage(from, fs.readFileSync(ran), sticker, { quoted: mek, contextInfo: { externalAdReply:{title: `${pushname}`,body:"", previewType:"PHOTO",thumbnail: reusesr, sourceUrl:`${soportefg}`}}})
+									reply(`${isPremium ? '💎No se te descontará ningún Diamante' : `💎-1 Diamante por utilizar esta función`}`)
+									fs.unlinkSync(media)	
+									fs.unlinkSync(ran)	
+								})
+							})
+							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`, `fps=15`, `-s 512:512`])
+							.toFormat('webp')
+							.save(ran)
+					} else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
+						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const media = await Fg.downloadAndSaveMediaMessage(encmedia)
+						ran = getRandom('.webp')
+						reply(wait())
+						await ffmpeg(`./${media}`)
+							.inputFormat(media.split('.')[1])
+							.on('start', function (cmd) {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Creando sticker video", "yellow"))
+							})
+							.on('error', function (err) {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Error al crear el sticker video", "red"))
+								fs.unlinkSync(media)
+								tipe = media.endsWith('.mp4') ? 'video' : 'gif'
+								reply('❎ Error al crear el stickergif')
+							})
+							.on('end', function () {
+								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
+								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker video creado con éxito", "yellow"))
+								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+									if (error) {
+											 reply('❎ Error al crear el stickergif')
+											 fs.unlinkSync(media)	
+											 fs.unlinkSync(ran)
+											 }
+									Fg.sendMessage(from, fs.readFileSync(ran), sticker, { quoted: mek, contextInfo: { externalAdReply:{title: `${pushname}`,body:"", previewType:"PHOTO",thumbnail: reusesr, sourceUrl:`${soportefg}`}}})
+									reply(`${isPremium ? '💎No se te descontará ningún Diamante' : `💎-1 Diamante por utilizar esta función`}`)
+									fs.unlinkSync(media)
+									fs.unlinkSync(ran)
+								})
+							})
+							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`, `fps=15`, `-s 512:512`])
+							.toFormat('webp')
+							.save(ran)
+					} else {
+						reply(`✳️ Etiqueta un *imagen/video/gif* con el comando ${prefix + command}\n\n*📌Nota* :\nEl video no tiene que pasar los 9 segundos`)
+					}
+				    limitAdd(sender, limit)
+					break		    
 		    
 case 'toimage': 
 case 'toimg':
