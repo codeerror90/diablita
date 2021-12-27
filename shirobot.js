@@ -3269,6 +3269,15 @@ if (stdout) reply(`✅ *Informe de la actualización:*\n\n${stdout}`)
 })
 break
 
+case 'reiniciar':
+if (!isOwner) return reply(ownerB())
+reply(`✳️ Espere un momento la bot se está actualizando`)
+exec(`bash reiniciar.sh`, (err, stdout) => {
+if (err) return reply(err)
+if (stdout) reply(`✅ *Informe:*\n\n${stdout}`)
+})
+break		    
+		    
 //https://api.zeks.me/api/magernulis?apikey=WRhywqyYC0doYNeqTZymcB2SjrT&nama=${botname}&kelas=6-08&text=${q}&tinta=6
 case 'nulis':
 	case 'tulis':
