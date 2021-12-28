@@ -90,7 +90,7 @@ const translate = require("@vitalets/google-translate-api");
 const listbahasa = require("@vitalets/google-translate-api/languages");
 
 //apiimgbb //20a14861e4f7591f3dc52649cb07ae02
-const apikeyimgbb = '04b9e9337ecb1ceb0250f81549301785'
+const apikeyimgbb = 'f614d1415f048aad698773279d0f45da'
 
 //-- Reportes
 
@@ -4559,7 +4559,7 @@ break
 					reply(wait())
 					console.log(color(time, 'magenta'), color(moment.tz('America/Mexico_City').format('HH:mm:ss'), "gold"), color('✅ Descargando sticker...'))
 					owgi = await  Fg.downloadAndSaveMediaMessage(ger)
-					anu = await imgbb("3b8594f4cb11895f4084291bc655e510", owgi)
+					anu = await imgbb("f614d1415f048aad698773279d0f45da", owgi)
 					teks = `${anu.display_url}`
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
