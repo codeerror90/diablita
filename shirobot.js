@@ -198,9 +198,9 @@ const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPQ"
 const owner = "5218333659697"
 const owner2 = "5218334160298"
 const mods = ["51940617554","5218911054291","5356588048"]
-const botname = "Diablitabot"
-const botname2 = "DIABLITABOT"
-const botname3 = "DiablitaBot"
+const botname = "Bunnybot"
+const botname2 = "BUNNYBOT"
+const botname3 = "BunnyBot"
 const ownername = "「Hermesツ」"
 const ownername2 = "hermes"
 
@@ -258,7 +258,7 @@ const vcard1 = 'BEGIN:VCARD\n'
 const vcard2 = 'BEGIN:VCARD\n' 
  + 'VERSION:3.0\n' 
  + 'FN:式⃟🩸고양이🩸⃟式⁩\n'
- + 'ORG:Dueño de DiablitaBot;\n' 
+ + 'ORG:Dueño de BunnyBot;\n' 
  + 'TEL;type=CELL;type=VOICE;waid=5218333659697:+52 8333 659 697\n'
  + 'END:VCARD'
 //====================================================================================================//
@@ -1005,7 +1005,7 @@ return Math.floor(angka)
 
 //>> sticker nombre
 function addMetadata(packname, author) {	
-	if (!packname) packname = 'DiablitaBot'; if (!author) author = 'Hermes';	
+	if (!packname) packname = 'BunnyBot'; if (!author) author = 'Hermes';	
 	author = author.replace(/[^a-zA-Z0-9]/g, '');	
 	let name = `${author}_${packname}`
 	if (fs.existsSync(`./${name}.exif`)) return `./${name}.exif`
@@ -1950,7 +1950,7 @@ Fg.sendMessage(from, levelup, text, {quoted: mek, contextInfo: {"mentionedJid": 
 
 //>> Emoji a sticker
     const sendStickerFromUrl = async(to, url) => {
-			console.log(color('[DiablitaBot]','magenta'), color('✅ Descargando sticker...'));
+			console.log(color('[BunnyBot]','magenta'), color('✅ Descargando sticker...'));
 				var names = getRandom('.webp')
 				var namea = getRandom('.png')
 				var download = function (uri, filename, callback) {
@@ -1966,7 +1966,7 @@ Fg.sendMessage(from, levelup, text, {quoted: mek, contextInfo: {"mentionedJid": 
 					exec(`webpmux -set exif ./sticker/data.exif ${asw} -o ${asw}`, async (error) => {
 					let media = fs.readFileSync(asw)
 					Fg.sendMessage(to, media, sticker,{quoted:mek})
-					console.log(color('[DiablitaBot]','magenta'), color('💎 Enviando sticker...'));
+					console.log(color('[BunnyBot]','magenta'), color('💎 Enviando sticker...'));
 					fs.unlinkSync(asw)
 					fs.unlinkSync(filess)
 					});
@@ -2882,7 +2882,7 @@ break
   ℹ️ ${prefix}join
   ℹ️ ${prefix}ayuda`
 
-//{quoted: mek, thumbnail: imgth, contextInfo: {externalAdReply: {title: `>⃗✗᳙᳓Diablita ᭲ Bot͢ 式⁩`,body: "I love you Macielly", previewType: "PHOTO", thumbnail: waifu0, sourceUrl:``}}}
+//{quoted: mek, thumbnail: imgth, contextInfo: {externalAdReply: {title: `>⃗✗᳙᳓Bunny ᭲ Bot͢ 式⁩`,body: "I love you Macielly", previewType: "PHOTO", thumbnail: waifu0, sourceUrl:``}}}
 py = await Fg.prepareMessage(from, shiro0, image)
 gbutsan = [
 {buttonId: `${prefix}creador`, buttonText: {displayText: '🐱 CREADOR'}, type: 1},
@@ -6861,7 +6861,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker imagen creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('BunnyBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									 if (error) {
 											 reply('❎ Error al crear el sticker')
 											 fs.unlinkSync(media)	
@@ -6897,7 +6897,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker video creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('BunnyBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									if (error) {
 											 reply('❎ Error al crear el stickergif')
 											 fs.unlinkSync(media)	
@@ -6947,7 +6947,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker imagen creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('BunnyBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									 if (error) {
 											 reply('❎ Error al crear el sticker')
 											 fs.unlinkSync(media)	
@@ -6983,7 +6983,7 @@ if(!isVerify) return isUser()
 							.on('end', function () {
 								console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"));
 								console.log('\x1b[1;31m', color("➛ ", "red"), color("Estado: "), color("Sticker video creado con éxito", "yellow"))
-								exec(`webpmux -set exif ${addMetadata('DiablitaBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('BunnyBot', 'Hermes')} ${ran} -o ${ran}`, async (error) => {
 									if (error) {
 											 reply('❎ Error al crear el stickergif')
 											 fs.unlinkSync(media)	
@@ -7263,7 +7263,7 @@ break
         if(!isOwner) return ('Fitur ini khusus owner')
         if (!q) return reply(mess.wrongFormat);
         exec(q, (err, stdout) => {
-          if (err) return reply(`[DiablitaBot]:~ ${err}`);
+          if (err) return reply(`[BunnyBot]:~ ${err}`);
           if (stdout) {
             reply(stdout);
           }
@@ -8161,7 +8161,7 @@ if (isBanned) return reply(banf())
                         var tes = "🥳 victoria del jugador"
                     }
                     if (vit == "derrota") {
-                        var tes = "🐱 victoria de Diablita"
+                        var tes = "🐱 victoria de Bunny"
                     }
                     if (vit == "empate") {
                         var tes = "El juego termino en empate"
@@ -8930,7 +8930,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   }
                   
                   //>> Mensajes
-                  if (budy.includes("Gracias bot") || (budy.includes("gracias bot") || (budy.includes("Gracias Diablita") || (budy.includes("gracias diablita"))))){
+                  if (budy.includes("Gracias bot") || (budy.includes("gracias bot") || (budy.includes("Gracias Bunny") || (budy.includes("gracias bunny"))))){
                   if (!isInteraction) return 
                   reply(`De nada, estoy para ayudarte :3`)
                   }
@@ -8950,7 +8950,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   if (!isInteraction) return 
                   reply(`Holi, en que le puedo ayudar? para ver mis comandos pon *+menu*`)
                   }
-                  if (budy.includes('Diablita')) {
+                  if (budy.includes('Bunny')) {
                   if (!isInteraction) return 
                   reply(`7w7`)
                   }
