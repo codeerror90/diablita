@@ -34,7 +34,7 @@ CFonts.say('shiro', {
   gradient: ['red', 'magenta']
 })
 
-CFonts.say(`DiablitaBot by Hermes`, {
+CFonts.say(`BunnyBot by Hermes`, {
   font: 'console',
   align: 'center',
   colors: ['yellow']
@@ -102,7 +102,7 @@ _*❖* Espero que haya leído las reglas para no tener malos entendidos_`
              const bosco1 = await Fg.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
 			 const bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
                 welcomeBut = [{buttonId:`nada`,buttonText:{displayText:'💟 GRACIAS'},type:1}]
-                welcomeButt = { contentText: `${teks}`, footerText: `*Copyright © DiablitaBot*`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+                welcomeButt = { contentText: `${teks}`, footerText: `*Copyright © BunnyBot*`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 Fg.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'buff', "contextInfo": { "mentionedJid" : [num], },})
                  
 
