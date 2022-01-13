@@ -9044,7 +9044,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
   }
 
 //>> Anti enlaces
-	if (budy.includes("chat.whatsapp.com") || (budy.includes("getsnap.link") || (budy.includes("m.kwai.me") || (budy.includes("instagram.com") || (budy.includes("t.me") || (budy.includes("whatsthemes.com") || (budy.includes("nysL.com") || (budy.includes("discord.gg") || (budy.includes("getsnap.link")))))))))){
+	if (budy.includes("chat.whatsapp.com") || (budy.includes("www.chat.w") || (budy.includes("getsnap.link") || (budy.includes("m.kwai.me") || (budy.includes("instagram.com") || (budy.includes("t.me") || (budy.includes("whatsthemes.com") || (budy.includes("nysL.com") || (budy.includes("discord.gg") || (budy.includes("getsnap.link")))))))))){
 		if (!isGroup) return
 		if (!isAntilink) return
 		console.log('\x1b[1;31m', color("─────────────────────────────────────────────────────────────────────", "magenta"))
