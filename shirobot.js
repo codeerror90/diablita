@@ -197,7 +197,7 @@ gCoinF
 const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPQ"
 const owner = "5218333659697"
 const owner2 = "5218334160298"
-const modsB = ["51936107669","5218911054291","5356588048"]
+const mods = ["51936107669","5218911054291","5356588048"]
 const botname = "Bunnybot"
 const botname2 = "BUNNYBOT"
 const botname3 = "BunnyBot"
