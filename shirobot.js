@@ -197,7 +197,7 @@ gCoinF
 const grupomc = "https://chat.whatsapp.com/FzcwScmCwCM4wRcEfBrPQ"
 const owner = "5218333659697"
 const owner2 = "5218334160298"
-const mods = ["51936107669","5218911054291","5356588048"]
+const mods = ["5214181441551","51936107669","5218911054291","5356588048"]
 const botname = "Bunnybot"
 const botname2 = "BUNNYBOT"
 const botname3 = "BunnyBot"
@@ -8955,8 +8955,8 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   reply(`7w7`)
                   }
                  
-                 if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Mátalo >:)") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv"))))){
-                 if (!isGroupAdmins) return 
+                 if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Ya sabés que hacer") || (budy.startsWith("Sácalo alv") || (budy.startsWith("Mátalo") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv")))))){
+		 if (!isOwner && !isMods) return 
                  connn = ["Weno :v", "Ok", "xd", "Hay boy n.n"]
                  tyxz = connn[Math.floor(Math.random() * connn.length)]
                  reply(tyxz)
