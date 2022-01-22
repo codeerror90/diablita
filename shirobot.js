@@ -6321,8 +6321,8 @@ break
 					}
 					break
 
-                case 'antiviewonce':
-				case 'antirvo':
+                case 'antiunavez':
+				case 'antirjj':
 				if(!isVerify) return isUser()
 				if (isBanned) return reply(banf())
 				if (!isGroup) return reply(group())
