@@ -8955,7 +8955,7 @@ Fg.sendMessage(from, aing, text, {quoted: mek, contextInfo: {"mentionedJid": [se
                   reply(`7w7`)
                   }
                  
-		 if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Ya sabés que hacer") || (budy.startsWith("Sácalo alv") || (budy.startsWith("Mátalo") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv")))))){
+		 if (budy.startsWith("Ya sabes que hacer") || (budy.startsWith("Ya sabés que hacer") || (budy.startsWith("Sácalo alv") || (budy.startsWith("Mátalo") || (budy.startsWith("sacalo alv") || (budy.startsWith("Sacalo alv"))))))){   
 		 if (!isOwner && !isMods) return 
                  connn = ["Weno :v", "Ok", "xd", "Hay boy n.n"]
                  tyxz = connn[Math.floor(Math.random() * connn.length)]
